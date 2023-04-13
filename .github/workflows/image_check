@@ -70,5 +70,3 @@ jobs:
       run: docker us-central1-docker.pkg.dev/${{ env.ID_PROJECT }}/${{ env.PROJECT_REPO }}/${{ env.IMAGE_NAME }}:latest
       
      
-        
-        
