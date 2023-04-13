@@ -3,7 +3,7 @@ env:
   ID_PROJECT: terraform-project-vm
   PROJECT_REPO: ots-project-repo
 
-name: Create Registry and Push image to artifact registry again
+name: Test
 on:
   push:
     branches: [ main ]
