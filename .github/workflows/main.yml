@@ -39,7 +39,6 @@ jobs:
       run: echo "$GITHUB_REF"
 
     - name: Terraform Apply
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |-
         cd terraform-registry 
         terraform destroy -auto-approve -input=false
