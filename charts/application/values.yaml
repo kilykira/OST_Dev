@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: us-central1-docker.pkg.dev/terraform-project-vm/ots-project-repo/ots-image
+  repository: nginx #us-central1-docker.pkg.dev/terraform-project-kilyk/ots-project-repo/ots-image
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "49664bc030a9d6403301b71ff581848ecb1ed2b9"
+  tag: ""  #"f7accfe08a5ca1cbc414a82d43ba0b7bda0bee34"
 
 imagePullSecrets: []
 nameOverride: ""
