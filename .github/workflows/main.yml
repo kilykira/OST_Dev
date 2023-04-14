@@ -1,12 +1,12 @@
 env:
   IMAGE_NAME: ots-image
-  ID_PROJECT: terraform-project-vm
+  ID_PROJECT: terraform-project-kilyk
   PROJECT_REPO: ots-project-repo
 
 name: Test
 on:
   push:
-    branches: [ main ]
+    branches: [ Ira ]
     
   workflow_dispatch:
 jobs:
@@ -23,7 +23,7 @@ jobs:
 
     - uses: google-github-actions/setup-gcloud@v0
       with:
-        service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        service_account_key: ${{ secrets.SECRET_ACCES_IRYNA }}
         project_id: ${{ secrets.ID_PROJECT }}
         export_default_credentials: true
     - uses: hashicorp/setup-terraform@v2
