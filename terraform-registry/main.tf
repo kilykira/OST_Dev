@@ -12,7 +12,7 @@ resource "google_artifact_registry_repository" "ots-project-repo" {
 
 terraform {
   backend "gcs" {
-    bucket  = "terraform-backend-bucket-1123"
+    bucket  = "terraform-project-atserge1"
     prefix  = "terraform/state/ots"
   }
 }
