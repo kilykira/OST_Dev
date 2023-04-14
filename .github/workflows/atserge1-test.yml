@@ -23,7 +23,7 @@ jobs:
 
     - uses: google-github-actions/setup-gcloud@v0
       with:
-        service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        service_account_key: ${{ ATSERGE_SA_KEY }}
         project_id: ${{ secrets.ID_PROJECT }}
         export_default_credentials: true
     - uses: hashicorp/setup-terraform@v2
@@ -39,7 +39,6 @@ jobs:
       run: echo "$GITHUB_REF"
 
     - name: Terraform Apply
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |-
         cd terraform-registry 
         terraform destroy -auto-approve -input=false
