@@ -64,3 +64,4 @@ jobs:
         docker image tag ${{ env.IMAGE_NAME }}:latest us-central1-docker.pkg.dev/${{ env.ID_PROJECT }}/${{ env.PROJECT_REPO }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
         docker push us-central1-docker.pkg.dev/${{ env.ID_PROJECT }}/${{ env.PROJECT_REPO }}/${{ env.IMAGE_NAME }}:latest
         docker push us-central1-docker.pkg.dev/${{ env.ID_PROJECT }}/${{ env.PROJECT_REPO }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        
