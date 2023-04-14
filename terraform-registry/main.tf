@@ -1,5 +1,5 @@
 provider "google"{
-    project     = "terraform-project-vm"
+    project     = "terraform-project-atserge1"
 
 }
 
@@ -12,7 +12,7 @@ resource "google_artifact_registry_repository" "ots-project-repo" {
 
 terraform {
   backend "gcs" {
-    bucket  = "terraform-project-vm-bucket"
+    bucket  = "terraform-backend-bucket-1123"
     prefix  = "terraform/state/ots"
   }
 }
